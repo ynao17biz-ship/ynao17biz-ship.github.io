@@ -3,39 +3,169 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="ClipLake公式サイト。コピーした文章を保存し、必要な場所へすばやく入力できます。">
-  <title>ClipLake</title>
-  <link rel="stylesheet" href="/assets/site.css">
+  <meta name="description" content="ClipLakeは、コピーした文章や定型文を端末内に整理し、必要な場所へすばやく入力できるiPhoneアプリです。">
+  <meta name="theme-color" content="#11161c">
+  <title>ClipLake — コピーしたものを、使う場所へ。</title>
+  <link rel="icon" type="image/png" href="/cliplake/assets/cliplake-app-icon.png">
+  <link rel="stylesheet" href="/cliplake/landing.css">
 </head>
 <body>
-  <main class="page">
-    <nav class="nav" aria-label="メインナビゲーション">
-      <a class="brand" href="/cliplake/">ClipLake</a>
-      <a href="/cliplake/privacy/">Privacy</a>
-      <a href="/cliplake/terms/">Terms</a>
-      <a href="/cliplake/support/">Support</a>
+  <header class="site-header">
+    <nav class="nav-shell" aria-label="メインナビゲーション">
+      <a class="brand" href="/cliplake/" aria-label="ClipLake ホーム">
+        <img src="/cliplake/assets/cliplake-app-icon.png" alt="" width="32" height="32">
+        <span>ClipLake</span>
+      </a>
+      <div class="nav-links">
+        <a href="#how-it-works">使い方</a>
+        <a href="#features">できること</a>
+        <a href="/cliplake/support/">サポート</a>
+        <span class="store-badge store-badge--small" data-app-store>公開予定</span>
+      </div>
+      <button class="menu-button" type="button" aria-expanded="false" aria-controls="mobile-menu">
+        <span class="sr-only">メニューを開く</span>
+        <span></span><span></span>
+      </button>
     </nav>
+    <div class="mobile-menu" id="mobile-menu" hidden>
+      <a href="#how-it-works">使い方</a>
+      <a href="#features">できること</a>
+      <a href="/cliplake/support/">サポート</a>
+      <span class="store-badge" data-app-store>App Storeで公開予定</span>
+    </div>
+  </header>
 
-    <section class="hero">
-      <p class="eyebrow">Clipboard, organized</p>
-      <h1>Your words, ready when you need them.</h1>
-      <p class="lead">
-        ClipLakeは、コピーした文章や定型文を端末内に整理し、
-        カスタムキーボードから必要な場所へすばやく入力できるiPhoneアプリです。
-      </p>
-      <p class="meta">対応予定: iOS 18以降</p>
+  <main>
+    <section class="hero section-shell" aria-labelledby="hero-title">
+      <div class="hero-copy">
+        <p class="eyebrow"><span></span>ClipLake / iPhone app</p>
+        <h1 id="hero-title">コピーしたものを、<em>使う場所へ。</em></h1>
+        <p class="hero-lead">文章を探し直す時間をなくして、必要な瞬間にすぐ使える。ClipLakeは、コピーした文章と定型文をひとつの場所に整えておけるアプリです。</p>
+        <div class="hero-actions">
+          <span class="store-badge store-badge--primary" data-app-store>App Storeで公開予定</span>
+          <a class="text-link" href="#how-it-works">操作を見る <span aria-hidden="true">↘</span></a>
+        </div>
+        <div class="hero-note">
+          <span class="note-mark" aria-hidden="true">⌁</span>
+          <span>保存した文章は端末内で管理。必要なものだけを、必要な場所へ。</span>
+        </div>
+      </div>
+      <div class="hero-visual" aria-label="ClipLakeの履歴画面">
+        <div class="hero-orbit hero-orbit--one" aria-hidden="true"></div>
+        <div class="hero-orbit hero-orbit--two" aria-hidden="true"></div>
+        <div class="phone phone--hero">
+          <div class="phone-screen">
+            <img src="/cliplake/assets/history-save.png" alt="ClipLakeの履歴画面。コピーした文章がリストに整理されている" width="393" height="796">
+          </div>
+        </div>
+        <div class="visual-caption"><span>01</span><span>履歴にまとめる</span></div>
+      </div>
     </section>
 
-    <section class="card">
-      <h2>Local first</h2>
-      <p>保存した本文、検索語、カテゴリ名は分析サービスへ送信しません。データは原則として端末内で管理します。</p>
-      <h2>Clear control</h2>
-      <p>クリップボードの内容は利用者の明示操作で追加します。キーボードのフルアクセスは任意です。</p>
-      <h2>Support</h2>
-      <p>使い方や問題については<a href="/cliplake/support/">サポートページ</a>をご確認ください。</p>
+    <section class="signal-strip" aria-label="ClipLakeの特徴">
+      <div class="section-shell signal-grid">
+        <p><span class="signal-icon" aria-hidden="true">↳</span><strong>すぐ使える</strong><span>キーボードから呼び出す</span></p>
+        <p><span class="signal-icon" aria-hidden="true">⌁</span><strong>端末内で管理</strong><span>自分のデータを自分で扱う</span></p>
+        <p><span class="signal-icon" aria-hidden="true">□</span><strong>迷わない</strong><span>履歴・お気に入り・定型文</span></p>
+      </div>
     </section>
 
-    <footer>© 2026 ClipLake</footer>
+    <section class="workflow section-shell" id="how-it-works" aria-labelledby="workflow-title">
+      <div class="section-heading">
+        <p class="eyebrow"><span></span>How it works</p>
+        <h2 id="workflow-title">覚えておくのは、<br><em>いつもの操作だけ。</em></h2>
+        <p>コピーした文章は履歴へ。次に使うときは、キーボードのClipLakeから選んで貼り付けるだけです。</p>
+        <ol class="steps">
+          <li><span>01</span><div><strong>コピーする</strong><small>いつものアプリで文章をコピー</small></div></li>
+          <li><span>02</span><div><strong>履歴から選ぶ</strong><small>キーボードのClipLakeを開く</small></div></li>
+          <li><span>03</span><div><strong>貼り付ける</strong><small>必要な場所へワンタップ</small></div></li>
+        </ol>
+      </div>
+      <figure class="workflow-demo">
+        <div class="demo-label"><span class="live-dot" aria-hidden="true"></span>実機での操作デモ</div>
+        <div class="video-frame video-frame--dark">
+          <video controls muted playsinline preload="metadata" aria-label="キーボードの履歴からClipLakeの文章を貼り付ける操作">
+            <source src="/cliplake/assets/keyboard-paste-demo.mp4" type="video/mp4">
+          </video>
+        </div>
+        <figcaption>キーボードから履歴を開いて、保存した文章を選ぶ流れ</figcaption>
+      </figure>
+    </section>
+
+    <section class="features section-shell" id="features" aria-labelledby="features-title">
+      <div class="section-heading section-heading--wide">
+        <p class="eyebrow"><span></span>Designed for the everyday</p>
+        <h2 id="features-title">使うほど、<em>手になじむ。</em></h2>
+        <p>日々の小さな入力を、少しだけ軽く。ClipLakeの画面は、よく使う動作がすぐ見つかるように設計しています。</p>
+      </div>
+      <div class="feature-grid">
+        <article class="feature-card feature-card--wide">
+          <div class="feature-copy">
+            <p class="feature-number">01 / SAVE</p>
+            <h3>コピーした文章を<br>そのまま残す。</h3>
+            <p>「あとで使うかも」を、もう一度探しに行かない。コピーしたテキストを履歴へ保存して、必要なときに取り出せます。</p>
+          </div>
+          <figure class="feature-media feature-media--video">
+            <video controls muted playsinline preload="metadata" aria-label="コピーしたテキストをClipLakeの履歴へ保存する操作">
+              <source src="/cliplake/assets/history-save-demo.mp4" type="video/mp4">
+            </video>
+            <figcaption>履歴への保存を実機で確認</figcaption>
+          </figure>
+        </article>
+        <article class="feature-card">
+          <div class="feature-copy">
+            <p class="feature-number">02 / ORGANIZE</p>
+            <h3>定型文は、<br>迷わず呼び出す。</h3>
+            <p>仕事、個人、問い合わせ。カテゴリで整えておけば、定型文をいつでも同じ場所から使えます。</p>
+          </div>
+          <figure class="feature-media">
+            <img src="/cliplake/assets/templates.png" alt="ClipLakeの定型文画面。カテゴリと文章が整理されている" width="393" height="796" loading="lazy">
+          </figure>
+        </article>
+        <article class="feature-card">
+          <div class="feature-copy">
+            <p class="feature-number">03 / FIND</p>
+            <h3>必要な言葉を、<br>すぐ見つける。</h3>
+            <p>履歴と定型文をまとめて検索。記憶に頼らず、キーワードから目的の文章へたどり着けます。</p>
+          </div>
+          <figure class="feature-media">
+            <img src="/cliplake/assets/search-results.png" alt="ClipLakeの検索画面。履歴と定型文の検索結果が表示されている" width="393" height="796" loading="lazy">
+          </figure>
+        </article>
+      </div>
+    </section>
+
+    <section class="principles section-shell" aria-labelledby="principles-title">
+      <div class="principles-intro">
+        <p class="eyebrow"><span></span>Quiet by design</p>
+        <h2 id="principles-title">必要な情報だけを、<br><em>静かに扱う。</em></h2>
+      </div>
+      <div class="principles-list">
+        <div><span class="principle-index">A</span><div><h3>端末内を基本に</h3><p>保存した本文や検索語は、原則として端末内で管理します。</p></div></div>
+        <div><span class="principle-index">B</span><div><h3>選べるアクセス</h3><p>キーボードのフルアクセスは、必要なときだけ利用できます。</p></div></div>
+        <div><span class="principle-index">C</span><div><h3>いつでも整理</h3><p>履歴・お気に入り・定型文を、自分のペースで整えられます。</p></div></div>
+      </div>
+    </section>
+
+    <section class="closing section-shell" aria-labelledby="closing-title">
+      <div class="closing-card">
+        <div>
+          <p class="eyebrow"><span></span>ClipLake</p>
+          <h2 id="closing-title">言葉を、<br><em>もっと近くに。</em></h2>
+          <p>リリース準備中です。公開後、このページからApp Storeへご案内します。</p>
+        </div>
+        <span class="store-badge store-badge--primary" data-app-store>App Storeで公開予定</span>
+      </div>
+    </section>
   </main>
+
+  <footer class="site-footer">
+    <div class="section-shell footer-shell">
+      <a class="brand brand--footer" href="/cliplake/"><img src="/cliplake/assets/cliplake-app-icon.png" alt="" width="28" height="28"><span>ClipLake</span></a>
+      <div class="footer-links"><a href="/cliplake/privacy/">Privacy</a><a href="/cliplake/terms/">Terms</a><a href="/cliplake/support/">Support</a></div>
+      <p>© 2026 ClipLake</p>
+    </div>
+  </footer>
+  <script src="/cliplake/landing.js" defer></script>
 </body>
 </html>
