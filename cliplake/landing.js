@@ -1,5 +1,5 @@
 (() => {
-  const appStoreUrl = "";
+  const appStoreUrl = "https://apps.apple.com/jp/app/cliplake/id6794156494";
   const storeTargets = document.querySelectorAll("[data-app-store]");
   const menuButton = document.querySelector(".menu-button");
   const mobileMenu = document.querySelector("#mobile-menu");
